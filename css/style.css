@@ -1,0 +1,650 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;   
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -khtml-user-select: none;
+    border: none;
+}
+.anchor{
+    font-size: 1px;
+    position: relative;
+    margin-top: -10%;
+    text-align: center;
+}
+.anchor2{
+    font-size: 1px;
+    position: absolute;
+    margin-top: -70%;
+    text-align: center;
+}
+button, select{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+a{
+    color: #000 !important;
+    text-decoration: none
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 0px;
+  }
+body{
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    background-image: url(../img/back.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav{
+    width: 30vw;
+    height: 1.4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 4%;
+    margin-top: 2%;
+    position: fixed;
+    right: 0;
+    z-index: 5000;
+}
+.nav__item{
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.4vw;
+}
+.cost{
+    width: 1.9vw;
+    height: 100vh;
+    right: 0;
+    margin-right: 3%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5000;
+}
+.fignia{
+    width: 1.9vw;
+    height: 20vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.line{
+    width: 0.1vw;
+    height: 5.2vh;
+    background: white;
+    border-radius: 2px;
+}
+.rybe {
+    width: 1.9vw;
+    height: 1.9vw;
+    background: 
+    linear-gradient(to top right, transparent calc(-500% - 3px), #fff calc(49.5% - 2px), #fff 49.5%, transparent 50%) top right, 
+    linear-gradient(to top left, transparent calc(-500% - 3px), #fff calc(49.5% - 2px), #fff 49.5%, transparent 50%) top left, 
+    linear-gradient(to bottom right, transparent calc(-500% - 3px), #fff calc(49.5% - 2px), #fff 49.5%, transparent 50%) bottom right, 
+    linear-gradient(to bottom left, transparent calc(-500% - 3px), #fff calc(49.5% - 2px), #fff 49.5%, transparent 50%) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rybe:before {
+    content: "";
+    display: block;
+    padding-top: 57.73%;
+}
+.logo{
+    width: 2.6vw;
+    height: 6.6vw;
+    position: absolute;
+    left: 0;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.box_f{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t_box_f{
+    color: white;
+    font-size: 9.4vw;
+    font-family: "TriodPostnaja"; 
+}
+.t_box_t{
+    color: white;
+    font-size: 6vw;
+    font-family: "TriodPostnaja"; 
+    position: absolute;
+    margin-top: -45%;
+}
+.box_s{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.box_t{
+    width: 100vw;
+    height: 80vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -10%;
+    position: relative;
+    z-index: 100;
+}
+.t1_box_s, .t2_box_s{
+    font-size: 3vw;
+    color: white;
+    width: 24vw;
+    font-family: "TriodPostnaja";
+    text-align: center;
+    margin-top: -20%;
+}
+.t3_box_s{
+    font-size: 3vw;
+    color: white;
+    width: 26vw;
+    font-family: "TriodPostnaja";
+    text-align: center;
+    margin-top: 15%;
+    position: relative;
+}
+.smoke{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    margin-top: -20%;
+    z-index: 3;
+}
+.bar{
+    width: 10vw;
+    background: #262723;
+}
+.bar:hover {
+    background: #749688;
+}
+.b1{
+    height: 30vw;
+}
+.b2{
+    height: 27vw;
+}
+.b3{
+
+    height: 7vw;
+}
+.b4{
+    height: 2vw;
+}
+.axis-labell {
+    font-size: 1.4vw;
+    font-family: "Manrope", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+  .t1_box_s-animation, .t2_box_s-animation {
+    animation: wipe-enter 2s 1
+  }
+  @keyframes wipe-enter {
+    0% {
+        margin-top: 6%;
+    }
+    50% {
+        margin-top: -20%;
+    }
+  }
+
+  .t3_box_s-animation {
+    animation: wipe-enterer 2s 1
+  }
+  @keyframes wipe-enterer {
+    0% {
+        z-index: 2;
+        margin-top: 80%;
+    }
+    50% {
+        z-index: 2;
+        margin-top: 15%;
+    }
+  }
+.blackfon{
+    width: 100vw;
+    height: 3vw;
+    background: #000;
+}
+.box_fo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #000;
+}
+.t_box_fo{
+    color: white;
+    font-size: 6vw;
+    font-family: "TriodPostnaja"; 
+    position: absolute;
+    margin-top: 4vw;
+}
+.svg{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ba{
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 1vw;
+}
+.cost2{
+    width: 72vw;
+    height: 80%;
+    margin-top: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+.my_jobs{
+    width: 30%;
+    height: 45%;
+}
+
+
+
+hr{
+    position: relative;
+    width: 100vw;
+    border: none;
+    background-color: rgb(165, 165, 165);
+    color: rgb(165, 165, 165); 
+    height: 1px; 
+}
+.box_fi{
+    width: 100vw;
+    height: 10vw;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+}
+.footer_block1{
+    width: 31%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    margin-top: 1%;
+}
+.ul{
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.tt1{
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: "TriodPostnaja"; 
+}
+.tt2{
+    font-size: 1vw;
+    font-family: "TriodPostnaja"; 
+}
+.footer_block2{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+.cont, .prav{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+}
+.cont{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contimg{
+    height: 2vw;
+}
+.pravtext{
+    color: white;
+    font-size: 1vw;
+}
+#pom{
+    width: 5vw;
+    height: 1vw;
+    background: none;
+    border: none;
+    text-shadow: none;
+    color: white;
+}
+#p{
+    background: #000;
+}
+#language-popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    z-index: 10000;
+}
+.language-button{
+    margin: 5px;
+    padding: 10x;
+    cursor: pointer;
+}
+
+
+@media (max-width:450px) {
+    .box_f{
+        width: 100vw;
+        height: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box_s{
+        width: 100vw;
+        height: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -14%;
+    }
+    .box_t {
+        width: 100vw;
+        height: 30vw;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: -20%;
+        position: relative;
+        z-index: 100;
+    }
+    .t_box_t {
+        color: white;
+        font-size: 6vw;
+        font-family: "TriodPostnaja";
+        position: absolute;
+        margin-top:0;
+    }
+    .svg{
+        width: 100vw;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ba {
+        height: 235px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-right: 1vw;
+    }
+    .smoke {
+        width: 100vw;
+        height: auto;
+        position: relative;
+        margin-top: -30%;
+        z-index: 3;
+    }
+    .box_fo {
+        width: 100vw;
+        height: 55vw;
+        display: flex;
+        justify-content: center;
+        background: #000;
+        margin-top: 35%;
+    }
+
+    hr{
+        position: relative;
+        width: 100vw;
+        border: none;
+        background-color: rgb(165, 165, 165);
+        color: rgb(165, 165, 165); 
+        height: 1px; 
+    }
+    .box_fi{
+        width: 100vw;
+        height: 10vw;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer_block1{
+        width: 31%;
+        height: 60%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px auto;
+        margin-top: 1%;
+    }
+    .ul{
+        color: white;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .tt1{
+        font-size: 1vw;
+        font-weight: bold;
+        font-family: "TriodPostnaja"; 
+    }
+    .tt2{
+        font-size: 1vw;
+        font-family: "TriodPostnaja"; 
+    }
+    .footer_block2{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .cont, .prav{
+        width: 38%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5vw;
+    }
+    .cont{
+        width: 20%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contimg{
+        height: 2vw;
+    }
+    .pravtext{
+        color: white;
+        font-size: 1vw;
+    }
+    #pom{
+        width: 5vw;
+        height: 1vw;
+        background: none;
+        border: none;
+        text-shadow: none;
+        color: white;
+    }
+    #p{
+        background: #000;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @font-face {
+    font-family: "TriodPostnaja"; 
+    src: url("../fonts/TriodPostnaja/TriodPostnaja.eot"); 
+    src: url("../fonts/TriodPostnaja/TriodPostnaja.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TriodPostnaja/TriodPostnaja.woff") format("woff"), 
+    url("../fonts/TriodPostnaja/TriodPostnaja.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }

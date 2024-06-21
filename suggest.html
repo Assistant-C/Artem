@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="website icon" type="png" href="img">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/suggest.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/triod-postnaja" type="text/css"/>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('c1KfMqqSsqR1oQW90');
+            })();
+        </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <img src="img/Logo.png" alt="" class="logo">
+        <div class="nav">
+            <a href="index.html#box_f"><p class="nav__item text-ua">Головна</p></a>
+            <a href="index.html#box_f"><p class="nav__item text-en" style="display: none;">Main</p></a>
+            <a href="index.html#anchor"><p class="nav__item text-ua">Про мене</p></a>
+            <a href="index.html#anchor"><p lass="nav__item text-en" style="display: none;">About me</p></a>
+            <a href="index.html#anchor2"><p class="nav__item text-ua">Знання</p></a>
+            <a href="index.html#anchor2"><p class="nav__item text-en" style="display: none;">Skills</p></a>
+            <a href="index.html#box_fo"><p class="nav__item text-ua">Роботи</p></a>
+            <a href="index.html#box_fo"><p class="nav__item text-en" style="display: none;">Works</p></a>
+            <a href="suggest.html"> <p class="nav__item text-ua">Зв'язок</p></a>
+            <a href="suggest.html"> <p class="nav__item text-en" style="display: none;">Contact</p></a>
+        </div>
+        <div class="form">
+            <p class="ft text-ua">Ви можете написати мені на пошту, заповнивши цю форму</p>
+            <p class="ft text-en" style="display: none;">You can email me by filling out this form</p>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number"> 
+                <label class="fname text-ua">Як звертатись</label>
+                <label class="fname text-en" style="display: none;">Your name</label>
+                <input class="iname" type="text" name="user_name">
+                <label class="femail text-ua">Ваш Email</label>
+                <label class="femail text-en" style="display: none;">Your Email</label>
+                <input class="iemail" type="email" name="user_email"> 
+                <label class="fmessege text-ua">Повідомлення</label>
+                <label class="fmessege text-en" style="display: none;">Message</label>
+                <textarea class="textarea" name="message"></textarea>
+                <input class="fsend" type="submit" value="Send">
+            </form>
+    </div>
+    <img class="smoke" src="img/smoke.png" alt="">
+    <div class="box_fi">
+        <div class="footer_block1">
+            <div class="ul">
+                <p class="tt1 text-ua">Про мене</p>
+                <p class="tt1 text-en" style="display: none;">About me</p>
+                <p class="tt2 text-ua">Мої навички</p>
+                <p class="tt2 text-en" style="display: none;">My skills</p>
+                <p class="tt2 text-ua">Блог</p>
+                <p class="tt2 text-en" style="display: none;">Blog</p>
+            </div>
+            <div class="ul">
+                <p class="tt1 text-ua">Підтримка</p>
+                <p class="tt1 text-en" style="display: none;">Support</p>
+                <p class="tt2 text-ua">Зв'яжіться з нами</p>
+                <p class="tt2 text-en" style="display: none;">Contact us</p>
+                <p class="tt2 text-ua">Положення та умови</p>
+                <p class="tt2 text-en" style="display: none;">Terms and conditions</p>
+            </div>
+        </div>
+        <div class="footer_block2">
+            <div class="cont">
+                <a href="" class="contblock"><img src="img/fs.png" alt="" class="contimg"></a>
+                <a href="" class="contblock"><img src="img/inst.png" alt="" class="contimg"></a>
+                <a href="" class="contblock"><img src="img/telegr.png" alt="" class="contimg"></a>
+                <a href="" class="contblock"><img src="img/yout.png" alt="" class="contimg"></a>
+                <a href="" class="contblock"><img src="img/pin.png" alt="" class="contimg"></a>
+            </div>
+            <div class="prav">
+                <p class="pravtext">COPYRIGHT 2024 | PRIVACY POLICY | TERMS |  </p>
+                <div class="input__block">
+                    <select name="" id="pom">
+                        <option id="p" data-land="ua">Українська</option>
+                        <option id="p" data-land="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="js/suggest.js"></script>
+</html>

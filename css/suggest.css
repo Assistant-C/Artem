@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;   
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -khtml-user-select: none;
+    border: none;
+}
+button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+a{
+    color: #000 !important;
+    text-decoration: none
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 0px;
+  }
+body{
+    overflow-x: hidden;
+    background: #000;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url(../img/back.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav{
+    width: 30vw;
+    height: 1.4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 4%;
+    margin-top: 2%;
+    position: fixed;
+    right: 0;
+    z-index: 5000;
+}
+.nav__item{
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.4vw;
+}
+.form{
+    width: 100vw;
+    height: 800px;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ft{
+    color: #FCFDFF;
+    font-family: "Manrope", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+.fname, .femail, .fmessege{
+    color: #FCFDFF;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.fsend{
+    border: none;
+    width: 117px;
+    height: 37px;
+    background: #262723;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textarea{
+    width: 500px;
+    height: 200px;
+    background: #262723;
+    color: white;
+    border: none;
+
+}
+.iemail, .iname{
+    background: #262723;
+    color: white;
+    border: none;
+}
+.box_fi{
+    width: 100vw;
+    height: 10vw;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10%;
+    z-index: 5;
+}
+.footer_block1{
+    width: 31%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    margin-top: 1%;
+}
+.ul{
+    color: white;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.tt1{
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: "TriodPostnaja"; 
+}
+.tt2{
+    font-size: 1vw;
+    font-family: "TriodPostnaja"; 
+}
+.footer_block2{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+.cont, .prav{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+}
+.cont{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contimg{
+    height: 2vw;
+}
+.pravtext{
+    color: white;
+    font-size: 1vw;
+}
+#pom{
+    width: 5vw;
+    height: 1vw;
+    background: none;
+    border: none;
+    text-shadow: none;
+    color: white;
+}
+#p{
+    background: #000;
+}
+.smoke{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    margin-top: -20%;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "TriodPostnaja"; 
+    src: url("../fonts/TriodPostnaja/TriodPostnaja.eot"); 
+    src: url("../fonts/TriodPostnaja/TriodPostnaja.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/TriodPostnaja/TriodPostnaja.woff") format("woff"), 
+    url("../fonts/TriodPostnaja/TriodPostnaja.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="website icon" type="png" href="img">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/triod-postnaja" type="text/css"/>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="language-popup">
+            <p>Виберіть мову / Choose Language</p>
+            <button class="language-button"  data-lang="ua">Українська</button>
+            <button class="language-button" data-lang="en">English</button>
+        </div>
+        <img src="img/Logo.png" alt="" class="logo">
+        <div class="nav">
+            <a href="index.html#box_f"><p class="nav__item text-ua">Головна</p></a>
+            <a href="index.html#box_f"><p class="nav__item text-en" style="display: none;">Main</p></a>
+            <a href="index.html#anchor"><p class="nav__item text-ua">Про мене</p></a>
+            <a href="index.html#anchor"><p lass="nav__item text-en" style="display: none;">About me</p></a>
+            <a href="index.html#anchor2"><p class="nav__item text-ua">Знання</p></a>
+            <a href="index.html#anchor2"><p class="nav__item text-en" style="display: none;">Skills</p></a>
+            <a href="index.html#box_fo"><p class="nav__item text-ua">Роботи</p></a>
+            <a href="index.html#box_fo"><p class="nav__item text-en" style="display: none;">Works</p></a>
+            <a href="suggest.html"> <p class="nav__item text-ua">Зв'язок</p></a>
+            <a href="suggest.html"> <p class="nav__item text-en" style="display: none;">Contact</p></a>
+        </div>
+        <div class="cost">
+            <div class="fignia">
+                <div class="line"></div>
+                <a href="index.html#box_f"><button class="rybe"></button></a>
+                <a href="index.html#anchor"><button class="rybe"></button></a>
+                <a href="index.html#anchor2"><button class="rybe"></button></a>
+                <a href="index.html#box_fo"><button class="rybe"></button></a>
+                <a href="index.html#"><button class="rybe"></button></a>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div id="box_f" class="box_f">
+            <p class="t_box_f text-ua">Вітаю!</p>
+            <p class="t_box_f text-en" style="display: none;">Welcome!</p>
+        </div>
+        <p id="anchor" class="anchor">.</p>
+        <div class="box_s">
+            <p class="t1_box_s text-ua">Мене звати Артем і я вивчаю програмування сайтів.</p>
+            <p class="t1_box_s text-en" style="display: none;">My name is Artem and I am studying web programming.</p>
+            <p class="t3_box_s text-ua">За 4 роки навчання я вивчив: HTML5, CSS3, а також трохи JavaScript та React.</p>
+            <p class="t3_box_s text-en" style="display: none;">During my 4 years of study, I learned: HTML5, CSS3, as well as some JavaScript and React.</p>
+            <p class="t2_box_s text-ua">Закінчую навчання у ШКМ, пройшовши курс за 4 роки.</p>
+            <p class="t2_box_s text-en" style="display: none;">I am finishing my studies at SCM, having completed the course in 4 years.</p>
+        </div>
+        <img class="smoke" src="img/smoke.png" alt="">
+        <div class="box_t">
+            <p id="anchor2" class="anchor2">.</p>
+            <p class="t_box_t text-ua">Мої знання</p>
+            <p class="t_box_t text-en" style="display: none;">My skills</p>
+            <div class="svg">
+                <div class="ba">
+                    <div class="bar b1"></div>
+                    <p class="axis-labell">HTML5</p>
+                </div>
+                <div class="ba">
+                    <div class="bar b2"></div>
+                    <p class="axis-labell">CSS3</p>
+                </div>
+                <div class="ba">
+                    <div class="bar b3"></div>
+                    <p class="axis-labell">JavaScript</p>
+                </div>
+                <div class="ba">
+                    <div class="bar b4"></div>
+                    <p class="axis-labell">React</p>
+                </div>
+            </div>
+        </div>
+        <div class="blackfon"></div>
+        <div id="box_fo" class="box_fo">
+            <p class="t_box_fo text-ua">Мої Роботи</p>
+            <p class="t_box_fo text-en" style="display: none;">My works</p>
+            <div class="cost2">
+                <img src="img//p1.png" alt="" class="my_jobs">
+                <img src="img//p2.png" alt="" class="my_jobs">
+                <img src="img//p3.png" alt="" class="my_jobs">
+                <img src="img//p4.png" alt="" class="my_jobs">
+                <img src="img//p5.png" alt="" class="my_jobs">
+                <img src="img/no_image.jpg" alt="" class="my_jobs">
+            </div>
+        </div>
+        <div class="blackfon"></div>
+        <hr>
+        <div class="box_fi">
+            <div class="footer_block1">
+                <div class="ul">
+                    <p class="tt1 text-ua">Про мене</p>
+                    <p class="tt1 text-en" style="display: none;">About me</p>
+                    <p class="tt2 text-ua">Мої навички</p>
+                    <p class="tt2 text-en" style="display: none;">My skills</p>
+                    <p class="tt2 text-ua">Блог</p>
+                    <p class="tt2 text-en" style="display: none;">Blog</p>
+                </div>
+                <div class="ul">
+                    <p class="tt1 text-ua">Підтримка</p>
+                    <p class="tt1 text-en" style="display: none;">Support</p>
+                    <p class="tt2 text-ua">Зв'яжіться з нами</p>
+                    <p class="tt2 text-en" style="display: none;">Contact us</p>
+                    <p class="tt2 text-ua">Положення та умови</p>
+                    <p class="tt2 text-en" style="display: none;">Terms and conditions</p>
+                </div>
+            </div>
+            <div class="footer_block2">
+                <div class="cont">
+                    <a href="" class="contblock"><img src="img/fs.png" alt="" class="contimg"></a>
+                    <a href="" class="contblock"><img src="img/inst.png" alt="" class="contimg"></a>
+                    <a href="" class="contblock"><img src="img/telegr.png" alt="" class="contimg"></a>
+                    <a href="" class="contblock"><img src="img/yout.png" alt="" class="contimg"></a>
+                    <a href="" class="contblock"><img src="img/pin.png" alt="" class="contimg"></a>
+                </div>
+                <div class="prav">
+                    <p class="pravtext">COPYRIGHT 2024 | PRIVACY POLICY | TERMS |  </p>
+                    <div class="input__block">
+                        <select name="" id="pom">
+                            <option id="p" data-land="ua">Українська</option>
+                            <option id="p" data-land="en">English</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/t.js"></script>
+</html>
